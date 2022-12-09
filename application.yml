@@ -45,3 +45,4 @@ logging:
                     EC2MetadataUtils: error
  
 baseUrl: http://eos-gateway-api-service:5555/v1
+
