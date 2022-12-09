@@ -1,0 +1,47 @@
+spring:
+    datasource:
+        url: jdbc:mysql://eos-dev-rds-01.cdgiiabcm6en.us-east-1.rds.amazonaws.com:3306/edwiki?createDatabaseIfNotExist=true
+        username: admin
+        password: admin123
+        driverClassName: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate.ddl-auto: create
+        show-sql: true
+        generate-ddl: false
+  # Producer properties
+    kafka:
+        bootstrap-servers: b-2.edkafka01.9ixyzs.c1.kafka.us-east-1.amazonaws.com:9092
+        group-id: group_id
+topic:
+  name:
+    producer: ed-topic-1 
+    consumer: ed-topic-1 
+# Common Kafka Properties
+auto:
+  create:
+    topics:
+      enable: true
+
+#AWS properties
+cloud:
+    aws:
+        region:
+            static: us-east-1
+        stack:
+            auto: false
+        credentials:
+            accessKey: AKIAYMMFC5FDSPU73BV6 
+            secretKey: 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 
+
+application:
+    bucket:
+        name: edwiki-webserver-config
+
+logging:
+    level:
+        com:
+            amazonaws:
+                util:
+                    EC2MetadataUtils: error
+ 
+baseUrl: http://eos-gateway-api-service:5555/v1
