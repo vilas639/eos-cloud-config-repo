@@ -10,7 +10,7 @@ spring:
         generate-ddl: false
   # Producer properties
     kafka:
-        bootstrap-servers: b-1.edkafka01.c0091k.c7.kafka.us-east-1.amazonaws.com:9092
+        bootstrap-servers: b-1.edkafka01.uin7zi.c13.kafka.us-east-1.amazonaws.com:9092
         group-id: group_id
 topic:
   name:
@@ -30,8 +30,8 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: AKIAYMMFC5FD4YR6YJPG 
-            secretKey: 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 
+            accessKey: AKIAYMMFC5FDZJ47HUUA 
+            secretKey: 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 
 
 application:
     bucket:
