@@ -2,7 +2,7 @@ spring:
     datasource:
         url: jdbc:mysql://ed-rds-01.cdgiiabcm6en.us-east-1.rds.amazonaws.com:3306/edwiki?createDatabaseIfNotExist=true
         username: admin
-        password: Admin123
+        password: admin123
         driverClassName: com.mysql.cj.jdbc.Driver
     jpa:
         hibernate.ddl-auto: create
@@ -10,7 +10,7 @@ spring:
         generate-ddl: false
   # Producer properties
     kafka:
-        bootstrap-servers: b-1.edkafka01.uin7zi.c13.kafka.us-east-1.amazonaws.com:9092
+        bootstrap-servers: b-2.edmsk01.pet4sf.c14.kafka.us-east-1.amazonaws.com:9092
         group-id: group_id
 topic:
   name:
@@ -30,8 +30,8 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: AKIAYMMFC5FDZJ47HUUA 
-            secretKey: 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 
+            accessKey: AKIAYMMFC5FD6HNAXSD5 
+            secretKey: 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 
 
 application:
     bucket:
@@ -44,5 +44,5 @@ logging:
                 util:
                     EC2MetadataUtils: error
  
-baseUrl: http://app.edshopper.com:5555/v1
+baseUrl: http://eos-gateway-api-service:5555/v1
 
