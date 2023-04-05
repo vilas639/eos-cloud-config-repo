@@ -44,5 +44,5 @@ logging:
                 util:
                     EC2MetadataUtils: error
  
-baseUrl: http://eos-gateway-api-service:5555/v1
+baseUrl: http://www.edshopper.com:5555/v1
 
