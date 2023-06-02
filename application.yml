@@ -45,4 +45,3 @@ logging:
                     EC2MetadataUtils: error
  
 baseUrl: http://dev-gateway.edshopper.com:5555/v1
-
