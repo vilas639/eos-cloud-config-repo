@@ -1,6 +1,6 @@
 spring:
     datasource:
-        url: jdbc:mysql://eos-database-01.cdgiiabcm6en.us-east-1.rds.amazonaws.com:3306/edwiki?createDatabaseIfNotExist=true
+        url: jdbc:mysql://ed-rds-01.cdgiiabcm6en.us-east-1.rds.amazonaws.com=true
         username: admin
         password: admin123
         driverClassName: com.mysql.cj.jdbc.Driver
@@ -10,7 +10,7 @@ spring:
         generate-ddl: false
   # Producer properties
     kafka:
-      bootstrap-servers: b-2.eoskafka01.1w38i6.c7.kafka.us-east-1.amazonaws.com:9092
+      bootstrap-servers: b-2.edkafka01.d65dc8.c18.kafka.us-east-1.amazonaws.com:9092
         group-id: group_id
 topic:
   name:
@@ -30,8 +30,8 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: AKIAYMMFC5FDTNAEDS3L 
-            secretKey: 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 
+            accessKey: AKIAYMMFC5FDYOC6RPPK 
+            secretKey: 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 
 
 application:
     bucket:
